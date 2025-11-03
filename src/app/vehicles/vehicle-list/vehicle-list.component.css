@@ -1,10 +1,19 @@
 .banner {
-  background-color: #003366; /* Azul institucional */
-  border-radius: 5px;
+  background-color: #003366;
+  border-radius: 4px;
 }
 
 .banner-img {
-  height: 100px;
+  height: 110px;
   object-fit: cover;
-  border-radius: 5px;
+  border-radius: 4px;
+}
+
+table {
+  background: #fff;
+}
+
+hr {
+  margin-top: 0.2rem;
+  margin-bottom: 1.5rem;
 }

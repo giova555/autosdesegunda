@@ -10,11 +10,31 @@ import { VehiclesService } from '../vehicles.service';
 export class VehicleListComponent implements OnInit {
 
   vehicles: Vehiculo[] = [];
+  // aquí vamos a guardar los totales por marca
+  brandTotals: { [marca: string]: number } = {};
 
   constructor(private vehiclesService: VehiclesService) {}
 
   ngOnInit(): void {
     this.vehiclesService.getVehicles()
-      .subscribe(data => this.vehicles = data);
+      .subscribe(data => {
+        this.vehicles = data;
+        this.calculateBrandTotals();
+      });
+  }
+
+  private calculateBrandTotals(): void {
+    const totals: { [marca: string]: number } = {};
+
+    this.vehicles.forEach(v => {
+      const marca = v.marca;
+      if (totals[marca]) {
+        totals[marca] += 1;
+      } else {
+        totals[marca] = 1;
+      }
+    });
+
+    this.brandTotals = totals;
   }
 }

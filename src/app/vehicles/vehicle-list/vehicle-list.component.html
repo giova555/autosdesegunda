@@ -1,6 +1,9 @@
 <div class="container mt-4">
 
-  <!-- Banner superior -->
+  <p class="text-muted mb-1">TuSegundazo.com</p>
+  <hr>
+
+  <!-- Banner -->
   <div class="banner d-flex align-items-center justify-content-between mb-4 p-3">
     <div>
       <h5 class="text-white mb-0 fw-bold">
@@ -8,11 +11,10 @@
       </h5>
       <small class="text-white-50">NUEVOS Y USADOS</small>
     </div>
-    <img src="assets/img/auto.png" alt="Vehículo" class="banner-img img-fluid">"
-         alt="Vehículo" class="banner-img img-fluid">
+    <img src="assets/img/auto.png" alt="Vehículo" class="banner-img img-fluid">
   </div>
 
-  <!-- Tabla de vehículos -->
+  <!-- Tabla -->
   <table class="table table-bordered table-striped">
     <thead class="table-dark">
       <tr>
@@ -31,5 +33,12 @@
       </tr>
     </tbody>
   </table>
+
+  <!-- Totales por marca -->
+  <div class="mt-3" *ngIf="vehicles.length > 0">
+    <p *ngFor="let marca of (brandTotals | keyvalue)">
+      <strong>Total {{ marca.key }}:</strong> {{ marca.value }}
+    </p>
+  </div>
 
 </div>
