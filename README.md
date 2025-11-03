@@ -1,3 +1,5 @@
+<img width="1780" height="897" alt="image" src="https://github.com/user-attachments/assets/5a428462-afab-4c8f-a945-8470d9053711" />
+
 # Autosdesegunda
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.17.
