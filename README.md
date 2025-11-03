@@ -1,4 +1,6 @@
 <img width="1780" height="897" alt="image" src="https://github.com/user-attachments/assets/5a428462-afab-4c8f-a945-8470d9053711" />
+<img width="1253" height="558" alt="image" src="https://github.com/user-attachments/assets/be5ed741-6c81-416e-a209-20d3f9027968" />
+
 
 # Autosdesegunda
 
