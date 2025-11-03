@@ -1,0 +1,10 @@
+.banner {
+  background-color: #003366; /* Azul institucional */
+  border-radius: 5px;
+}
+
+.banner-img {
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+}

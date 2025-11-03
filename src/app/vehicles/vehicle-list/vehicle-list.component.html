@@ -1,0 +1,35 @@
+<div class="container mt-4">
+
+  <!-- Banner superior -->
+  <div class="banner d-flex align-items-center justify-content-between mb-4 p-3">
+    <div>
+      <h5 class="text-white mb-0 fw-bold">
+        COMERCIALIZACIÓN DE AUTOMOTORES
+      </h5>
+      <small class="text-white-50">NUEVOS Y USADOS</small>
+    </div>
+    <img src="assets/img/auto.png" alt="Vehículo" class="banner-img img-fluid">"
+         alt="Vehículo" class="banner-img img-fluid">
+  </div>
+
+  <!-- Tabla de vehículos -->
+  <table class="table table-bordered table-striped">
+    <thead class="table-dark">
+      <tr>
+        <th>#</th>
+        <th>Marca</th>
+        <th>Línea</th>
+        <th>Modelo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let v of vehicles; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ v.marca }}</td>
+        <td>{{ v.linea }}</td>
+        <td>{{ v.modelo }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
